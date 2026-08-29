@@ -1,0 +1,48 @@
+ESPECIFICACIÓN FUNCIONAL
+Plataforma de Agentes Comerciales IA
+Versión 0.1 — Documento de trabajo
+
+Objetivo
+Definir el comportamiento funcional del sistema desde el registro de un negocio hasta una venta y su seguimiento.
+
+Usuarios
+Administrador de plataforma; propietario del negocio; colaboradores con permisos configurables.
+
+Flujo principal
+Registro → negocio → configuración → productos → conocimiento → agente → canal → conversación → CRM → cotización → pedido → pago → envío → postventa.
+
+Negocio
+Debe permitir registrar identidad, horarios, contactos, políticas, moneda, zonas, redes y reglas comerciales.
+
+Catálogo universal
+Debe soportar productos, servicios, variantes, imágenes, stock, precios y atributos dinámicos por nicho.
+
+Base de conocimiento
+Debe admitir información manual y documentos que el agente pueda consultar de forma controlada.
+
+Agente
+Debe permitir configurar identidad, objetivo, tono, instrucciones, conocimiento, estrategia, límites y transferencia humana.
+
+Herramientas
+Buscar productos, consultar producto, stock, precio, políticas, cliente y pedido; crear cliente, lead, cotización y pedido; transferir a humano.
+
+Conversaciones
+Conservar contexto, identificar cliente y negocio, registrar mensajes y permitir intervención humana.
+
+Motor comercial
+Detectar intención, calificar necesidad, recomendar, resolver dudas, manejar objeciones autorizadas, cotizar y cerrar.
+
+CRM
+Registrar clientes, leads, historial, productos consultados, cotizaciones y pedidos.
+
+Pedidos
+Gestionar estados desde pendiente hasta entregado, además de cancelado y devuelto.
+
+Automatizaciones
+Permitir reglas activadas por eventos y temporizadores con controles contra spam.
+
+Analítica
+Medir conversaciones, leads, cotizaciones, ventas, conversión y rendimiento del agente.
+
+Criterio de MVP
+Un negocio nuevo debe poder completar el flujo completo sin intervención técnica del desarrollador salvo incidencias o configuración externa requerida.

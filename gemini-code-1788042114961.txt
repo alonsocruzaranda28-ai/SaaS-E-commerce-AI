@@ -1,0 +1,67 @@
+PLAN MAESTRO DE EJECUCIÓN
+Plataforma de Agentes Comerciales IA
+Versión 0.1 — Documento de trabajo
+
+Regla de ejecución
+No avanzar por apariencia de terminado. Cada fase se considera terminada cuando está construida, integrada, probada, segura y documentada.
+
+Fase 0 — Definición
+Revisar documentación, cerrar alcance, entidades, permisos, requisitos y criterios de éxito.
+
+Fase 1 — Infraestructura
+Repositorio, ambientes, base de datos, almacenamiento, secretos, dominio, logs y despliegue.
+
+Fase 2 — Usuarios y negocios
+Autenticación, registro, negocio, roles, permisos y aislamiento multi-tenant.
+
+Fase 3 — Catálogo
+Productos, imágenes, variantes, precios, stock y atributos dinámicos. Probar muebles, cosmética, repuestos y tecnología.
+
+Fase 4 — Conocimiento
+Carga, organización, actualización y recuperación de información del negocio.
+
+Fase 5 — Agente
+Creación, configuración, instrucciones, reglas, conocimiento y criterios de derivación.
+
+Fase 6 — Herramientas
+Implementar herramientas de consulta y después acciones de creación/actualización con controles.
+
+Fase 7 — Conversaciones
+Contexto, memoria, identificación, respuestas y manejo de errores.
+
+Fase 8 — WhatsApp
+Webhook, recepción, identificación de negocio, agente, respuesta y envío.
+
+Fase 9 — CRM
+Clientes, leads, historial y estados comerciales.
+
+Fase 10 — Ventas
+Recomendación, cotización, objeciones y cierre.
+
+Fase 11 — Pedidos
+Conversión de cotización a pedido, estados y seguimiento básico.
+
+Fase 12 — Pagos
+Abstracción de métodos y estados de pago; integración inicial seleccionada después de evaluación.
+
+Fase 13 — Automatizaciones
+Seguimientos, recuperación de oportunidades y postventa.
+
+Fase 14 — Analítica
+Dashboard y métricas comerciales y de IA.
+
+Fase 15 — Piloto
+Implementar con la tienda real de armarios y reposteros.
+
+Fase 16 — Pruebas integrales
+Probar registro → producto → agente → WhatsApp → cliente → recomendación → cotización → pedido → resultado.
+
+Fase 17 — Lanzamiento controlado
+Primero piloto; luego pocos negocios; después primeros clientes de pago; finalmente escalamiento.
+
+Hitos
+Hito 1: agente comercial funcionando en negocio real.
+Hito 2: segundo negocio sin modificar el núcleo.
+Hito 3: replicación multinicho.
+Hito 4: autoservicio SaaS.
+Hito 5: escalamiento.

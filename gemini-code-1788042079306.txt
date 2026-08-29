@@ -1,0 +1,94 @@
+DOCUMENTO MAESTRO
+Plataforma de Agentes Comerciales IA
+Versión 0.1 — Documento de trabajo
+
+1. Visión del proyecto
+Crear una plataforma SaaS que permita a cualquier negocio crear y operar un agente comercial de IA personalizado con la información, productos, servicios, precios, políticas y reglas del negocio.
+El agente estará orientado a atención y ventas 24/7, comenzando con WhatsApp y el mercado peruano, pero con arquitectura preparada para múltiples canales, nichos y países.
+
+2. Problema que resuelve
+Los negocios pierden oportunidades por atención lenta, horarios limitados, información desorganizada, falta de seguimiento, dependencia de vendedores y dificultad para escalar la atención comercial.
+
+3. Solución
+La plataforma centraliza datos comerciales y los convierte en un agente capaz de atender, identificar necesidades, recomendar, cotizar, registrar oportunidades, gestionar pedidos y realizar seguimiento bajo reglas autorizadas.
+
+4. Usuario objetivo
+Tiendas online, comercios tradicionales, negocios de productos, empresas de servicios y pequeñas y medianas empresas que necesiten atención y ventas automatizadas.
+
+5. Concepto de funcionamiento
+Registro → configuración del negocio → catálogo → conocimiento → agente → canales → conversación → recomendación → cotización → pedido → seguimiento → analítica.
+
+6. Arquitectura general
+El sistema se dividirá en interfaz, backend, datos, inteligencia artificial, motor comercial, canales e integraciones.
+
+7. Sistema multi-nicho
+El núcleo utilizará estructuras universales y atributos configurables. Un armario, un cosmético, un repuesto o un producto tecnológico podrán utilizar el mismo motor sin crear una plataforma nueva para cada nicho.
+
+8. Agentes de IA
+Cada negocio tendrá un agente configurable con identidad, objetivo, tono, conocimiento, reglas, estrategia comercial, herramientas, permisos y criterios de derivación humana.
+
+9. Productos
+Los productos tendrán información común como nombre, SKU, descripción, categoría, precio, stock, imágenes y variantes, además de atributos personalizados según el nicho.
+
+10. WhatsApp y canales
+WhatsApp será el primer canal. La arquitectura deberá permitir añadir webchat, Instagram, Facebook y otros canales posteriormente sin reconstruir el núcleo.
+
+11. Motor comercial
+El agente deberá detectar necesidad, calificar, buscar productos, recomendar, resolver dudas, manejar objeciones dentro de las reglas, cotizar y conducir al cierre cuando corresponda.
+
+12. Clientes y conversaciones
+El CRM estará integrado con las conversaciones y registrará clientes, leads, productos consultados, cotizaciones, pedidos, estados e historial.
+
+13. Pedidos
+Los pedidos relacionarán cliente, productos, cantidades, precios, descuentos, envío, pago, dirección y estado.
+
+14. Pagos
+Se diseñará una capa de pagos desacoplada para permitir diferentes métodos y proveedores. El agente nunca afirmará que un pago fue confirmado sin evidencia del sistema.
+
+15. Logística
+Los pedidos y envíos serán entidades relacionadas pero separadas. Se podrá incorporar transportista, tracking, costo, dirección y estado.
+
+16. Automatizaciones
+Se podrán ejecutar acciones por eventos como cotización sin compra, pedido entregado o cliente inactivo, respetando límites de frecuencia y reglas del negocio.
+
+17. Panel del negocio
+Dashboard, productos, clientes, conversaciones, agentes, pedidos, automatizaciones, configuraciones y analítica.
+
+18. Panel administrador
+Gestión de negocios, usuarios, planes, consumo, integraciones, errores, actividad y parámetros globales.
+
+19. Analítica
+Conversaciones, leads, cotizaciones, pedidos, ventas, conversión, ticket promedio, productos consultados y rendimiento del agente.
+
+20. Seguridad y aislamiento
+La plataforma será multi-tenant. Los datos, clientes, productos, agentes y conversaciones de cada negocio estarán aislados lógica y técnicamente.
+
+21. Modelo de negocio
+Modelo SaaS. La estructura podrá combinar suscripción, consumo y servicios adicionales. El precio definitivo se determinará después de conocer costos operativos.
+
+22. Perú como mercado inicial
+Se considerarán PEN, WhatsApp, comercio electrónico peruano, pagos, logística y condiciones comerciales locales, evitando que estas decisiones bloqueen la expansión internacional.
+
+23. Expansión internacional
+La arquitectura deberá separar configuraciones por país como moneda, impuestos, idioma, pagos, logística y formatos.
+
+24. Inteligencia artificial
+El sistema requerirá modelos de lenguaje, recuperación de conocimiento, memoria de conversación, uso de herramientas y controles de seguridad.
+
+25. Integraciones
+Se prevén integraciones con WhatsApp, Shopify, pagos, logística, correo y otros sistemas mediante interfaces desacopladas.
+
+26. Arquitectura tecnológica
+La selección final de frontend, backend, base de datos, IA, almacenamiento, infraestructura y proveedores se definirá mediante una especificación técnica comparativa.
+
+27. MVP integral
+El MVP debe permitir crear un negocio, cargar productos, configurar un agente, conectar WhatsApp, recibir conversaciones, recomendar, cotizar, registrar clientes y crear/gestionar un pedido básico.
+
+28. Roadmap
+Documentación → arquitectura → infraestructura → negocios → catálogo → conocimiento → agente → herramientas → conversaciones → WhatsApp → CRM → cotizaciones → pedidos → pagos → automatizaciones → analítica → piloto → pruebas → lanzamiento.
+
+29. Plan de ejecución
+Cada fase tendrá objetivo, tareas, dependencias, herramientas, resultado esperado, pruebas y criterio de terminado.
+
+30. Evolución futura
+Más canales, múltiples agentes, marketplace, proveedores, automatización avanzada, más países, analítica avanzada y nuevas capacidades de IA.

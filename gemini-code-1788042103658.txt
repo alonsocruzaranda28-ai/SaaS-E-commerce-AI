@@ -1,0 +1,39 @@
+ARQUITECTURA DEL SISTEMA
+Plataforma de Agentes Comerciales IA
+Versión 0.1 — Documento de trabajo
+
+Principio
+Arquitectura modular, multi-tenant, multinicho y preparada para múltiples canales.
+
+Capas
+Interfaz; backend/API; datos; IA; motor comercial; integraciones; canales.
+
+Multi-tenant
+Cada negocio debe tener un espacio lógico aislado. Toda entidad comercial deberá quedar asociada al negocio correspondiente.
+
+Entidades principales
+Usuario, negocio, agente, producto, categoría, atributo, cliente, conversación, mensaje, lead, cotización, pedido, pago, envío, automatización, integración y evento.
+
+Producto universal
+Modelo común más atributos dinámicos para representar categorías diferentes sin modificar el núcleo.
+
+Conocimiento
+Separación entre datos estructurados y documentos/información no estructurada.
+
+Agente
+Orquestador que combina instrucciones, conocimiento, contexto y herramientas con permisos.
+
+Canales
+WhatsApp inicialmente; canales futuros conectados mediante una capa de integración.
+
+Eventos
+cliente_creado, mensaje_recibido, lead_creado, cotizacion_creada, pedido_creado, pago_confirmado, pedido_enviado y pedido_entregado.
+
+Seguridad
+Autenticación, autorización, roles, aislamiento, cifrado, secretos, auditoría, límites y backups.
+
+Independencia de proveedores
+Cuando sea razonable, modelos de IA, mensajería, pagos y logística deberán estar detrás de interfaces internas para reducir dependencia.
+
+Escalabilidad
+Comenzar con arquitectura simple y escalar componentes según uso real, evitando sobredimensionar el MVP.
